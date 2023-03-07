@@ -1,22 +1,14 @@
 import user from 'json/user.json';
+import data from 'json/data.json';
 import { Profile } from 'components/Profile/Profile';
+import { Statistics } from 'components/Statistics/Statistics';
 
 
 
 
 export const App = () => {
   return (
-    <div
-    // style={{
-    //   // height: '100vh',
-    //   display: 'flex',
-    //   justifyContent: 'center',
-    //   alignItems: 'center',
-    //   fontSize: 40,
-    //   color: '#010101'
-    // }}
-    >
-
+    <div>
       <Profile
         username={user[0].username}
         tag={user[0].tag}
@@ -24,6 +16,7 @@ export const App = () => {
         avatar={user[0].avatar}
         stats={user[0].stats}
       />
+      <Statistics title="Upload stats" stats={data} />
 
 
     </div>
