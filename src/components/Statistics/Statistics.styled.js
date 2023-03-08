@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const StatWrap = styled.div`
  width:300px;
- /* height:150px; */
   border-radius: 0px;
   background : #f0efef;
   box-shadow:32px 32px 64px #afaeae, -32px -32px 64 #ffffff;
@@ -11,9 +10,8 @@ export const StatWrap = styled.div`
   flex-direction:column;
   justify-content:center;
   align-items:center;
-  /* padding-top:15px; */
-  /* margin-top:15px; */
   `;
+
 export const StatTitle = styled.h2`
   text-transform: uppercase;
   color: grey;
